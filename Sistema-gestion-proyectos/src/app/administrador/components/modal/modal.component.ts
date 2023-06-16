@@ -10,6 +10,7 @@ import { Administrador } from '../../models/administradorModel';
 })
 export class ModalComponent {
   selectedDisp?: string;
+  selectedRol?: string;
 
   userForm = new FormGroup({
     id: new FormControl(''),
@@ -25,8 +26,8 @@ export class ModalComponent {
 
   id: Number = 0;
   nombre: string = '';
-  rol: string = '';
-  disponibilidad: string = '';
+  rol: any = this.userForm.value.rol;
+  disponibilidad: any = this.userForm.value.disponibilidad;
   clave: string = '';
   cedula: string = '';
 
@@ -41,8 +42,8 @@ export class ModalComponent {
       this.id,
       this.nombre,
       this.cedula,
-      this.rol,
       this.disponibilidad,
+      this.rol,
       this.clave
     )
     console.log(bus);

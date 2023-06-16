@@ -7,8 +7,8 @@ import { Administrador } from '../models/administradorModel';
   providedIn: 'root'
 })
 export class AdminService {
-  url = '/api/Bus/';
-  baseUrl = '';
+  url = '/Usuarios/';
+  baseUrl = 'http://localhost:3000';
   constructor(private http: HttpClient) { }
 
   obtenerUserPorId(idBus: string): Observable<any> {

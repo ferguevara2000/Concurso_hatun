@@ -1,0 +1,119 @@
+{
+  "Administradores": [
+    {
+      "cedula": "1801",
+      "nombre": "ADMIN",
+      "rol": "Administrador",
+      "clave": "12345"
+    }
+  ],
+  "Usuarios": [
+    {
+      "id": 1,
+      "cedula": "1802",
+      "nombre": "Juan Perez",
+      "rol": "Desarrollador",
+      "disponibilidad": "Disponible",
+      "clave": "123"
+    },
+    {
+      "id": 2,
+      "cedula": "1803",
+      "nombre": "Juan Perez",
+      "rol": "Diseñador",
+      "disponibilidad": "Disponible",
+      "clave": "123"
+    },
+    {
+      "id": 3,
+      "cedula": "1803",
+      "nombre": "Juan Perez",
+      "rol": "Gerente",
+      "disponibilidad": "Disponible",
+      "clave": "123"
+    },
+    {
+      "id": 4,
+      "nombre": "asdasd",
+      "cedula": "sdasdas",
+      "rol": "",
+      "disponibilidad": "",
+      "clave": "dasdas"
+    }
+  ],
+  "proyectos": [
+    {
+      "id": 1,
+      "nombre": "Proyecto A",
+      "descripcion": "Descripción del proyecto A",
+      "fechaInicio": "2023-01-01",
+      "fechaFin": "2023-12-31"
+    },
+    {
+      "id": 2,
+      "nombre": "Proyecto B",
+      "descripcion": "Descripción del proyecto B",
+      "fechaInicio": "2023-06-01",
+      "fechaFin": "2023-11-30"
+    }
+  ],
+  "hitos": [
+    {
+      "id": 1,
+      "proyectoId": 1,
+      "fechaLimite": "2023-03-31",
+      "tareas": [
+        {
+          "id": 1,
+          "nombre": "Tarea 1",
+          "descripcion": "Descripción de la Tarea 1",
+          "fechaInicio": "2023-02-01",
+          "fechaFin": "2023-02-28",
+          "estado": "completada",
+          "porcentajeAvance": 100,
+          "personasAsignadas": [
+            {
+              "cedula": "123456789",
+              "nombre": "Juan Perez",
+              "rol": "Desarrollador",
+              "disponibilidad": true,
+              "clave": "contraseña123"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "proyectoId": 1,
+      "fechaLimite": "2023-06-30",
+      "tareas": [
+        {
+          "id": 2,
+          "nombre": "Tarea 2",
+          "descripcion": "Descripción de la Tarea 2",
+          "fechaInicio": "2023-04-01",
+          "fechaFin": "2023-04-30",
+          "estado": "pendiente",
+          "porcentajeAvance": 0,
+          "personasAsignadas": [
+            {
+              "cedula": "987654321",
+              "nombre": "Ana Sanchez",
+              "rol": "Diseñadora",
+              "disponibilidad": true,
+              "clave": "contraseña456"
+            },
+            {
+              "cedula": "456789123",
+              "nombre": "Pedro Rodriguez",
+              "rol": "Desarrollador",
+              "disponibilidad": true,
+              "clave": "contraseña789"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
