@@ -11,9 +11,10 @@ import { AdminService } from '../../services/user.service';
 export class UsuariosComponent {
   sideNavStatus: boolean = false
   data: Administrador[] = []
-  listFields: string[] = ['nombre','cedula','rol','disponibilidad','clave']
+  listFields: string[] = ['id','nombre','cedula','rol','disponibilidad','clave']
   
   columns: any[] = [
+    { field: 'id', title: 'ID' },
     { field: 'nombre', title: 'Nombre' },
     { field: 'cedula', title: 'Cedula' },
     { field: 'rol', title: 'Rol' },
@@ -37,6 +38,7 @@ export class UsuariosComponent {
       }
     }
     deleteData(rowId: Number) {
+      console.log(rowId)
       this.userService.eliminarUser(rowId).subscribe(() => {
         this.loadData();
       });

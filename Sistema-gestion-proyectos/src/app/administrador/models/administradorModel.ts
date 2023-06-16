@@ -4,14 +4,14 @@ export class Administrador{
     cedula: string
     rol: string
     disponibilidad: string
-    contraseña:string
+    clave:string
 
-    constructor(id:Number, nombre:string, cedula:string, rol:string, disponibilidad:string, contraseña:string){
+    constructor(id:Number, nombre:string, cedula:string, rol:string, disponibilidad:string, clave:string){
         this.id = id
         this.nombre = nombre
         this.cedula = cedula
         this.rol = rol
         this.disponibilidad = disponibilidad
-        this.contraseña = contraseña
+        this.clave = clave
     }
 }
