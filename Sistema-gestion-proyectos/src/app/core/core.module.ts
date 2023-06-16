@@ -21,6 +21,10 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
     CoreRoutingModule,
     ReactiveFormsModule,
     FormsModule
+  ],exports:[
+    MainPageComponent,
+    HeaderComponent,
+    SideNavComponent
   ]
 })
 export class CoreModule { }

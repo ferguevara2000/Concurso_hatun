@@ -4,6 +4,7 @@ import { LoginComponent } from './core/pages/login/login.component';
 
 const routes: Routes = [
   {path : '', component:LoginComponent},
+  {path : 'usuarios', loadChildren:() => import('./administrador/administrador.module').then(m => m.AdministradorModule)}
   ]
   
   @NgModule({
