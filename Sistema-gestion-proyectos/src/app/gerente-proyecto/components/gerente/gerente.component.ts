@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./gerente.component.css']
 })
 export class GerenteComponent {
-
+  title = 'HeaderSideNav'
+  sideNavStatus: boolean = false
 }
